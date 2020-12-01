@@ -11,11 +11,11 @@
 	background-position: center;
 }
 
-.todo-app--dark_theme .todo-app--todo-input__div {
+.todo-app--dark_theme .todo-app--todo-input__label {
     background: hsl(235, 24%, 19%);
 }
 
-.todo-app--dark_theme .todo-app--todo-input__div > input {
+.todo-app--dark_theme .todo-app--todo-input__label > input {
     color: hsl(234, 39%, 85%);
 }
 

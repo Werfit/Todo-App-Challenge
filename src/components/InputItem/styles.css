@@ -1,4 +1,4 @@
-.todo-app--todo-input__div {
+.todo-app--todo-input__label {
 	padding: 1.5rem;
 
 	border-radius: 5px;
@@ -8,7 +8,7 @@
 	margin-top: 3em;
 }
 
-.todo-app--todo-input__div > input {
+.todo-app--todo-input__label > input {
 	outline: none;
 	background: transparent;
 	border: 0px;
