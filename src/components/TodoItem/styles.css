@@ -1,0 +1,32 @@
+.todo-app--todo-item__div {
+	padding: 1.5rem;
+	display: flex;
+
+	align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.todo-app--todo-item__div > p {
+	margin: 0px;
+	margin-left: 1em;
+	flex: 1;
+
+	transition: .3s;
+}
+
+.todo-app--text__p {
+    text-decoration: line-through;
+}
+
+.todo-app--todo-item__div > svg {
+    opacity: 0;
+    transition: .3s;
+
+    cursor: pointer;
+}
+
+.todo-app--todo-item__div:hover > svg {
+    opacity: 1;
+}

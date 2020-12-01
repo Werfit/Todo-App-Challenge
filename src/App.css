@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+.header_image__header {
+	width: 100%;
+	padding: 4em 2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-app__div {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0px auto;
+	width: 40%;
+
+	position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-app--title__div {
+	display: flex;
+	justify-content: space-between;
+
+	font-size: 36px;
+	align-items: center;
+
+	color: #fff;
+	fill: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-app--title__div > span {
+	font-weight: 700;
+	letter-spacing: .4em;
+
+	text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-app--title__div svg {
+	cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-app--list__div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+	top: 100%;
+
+	position: absolute;
+	margin-top: 2em;
+	border-radius: 5px;	
+}
+
+.todo-app--menu__div {
+    display: flex;
+    padding: 1.5rem;
+
+    justify-content: space-between;
+
+	font-size: 14px;
+}
+
+.todo-app--menu_item__div {
+	flex: 1;
+	text-align: center;
+}
+
+.todo-app--menu_item__div:first-child {
+	text-align: left;
+}
+
+.todo-app--menu_item__div:last-child {
+	text-align: right;
+}
+
+.todo-app--menu_item__div > span {
+    margin: 0px .3em;
+    cursor: pointer;
+
+    font-weight: 700;
+	transition: .3s;
+	flex: 1;
+}
+
+.todo-app--menu_item__div > span:last-child {
+	text-align: right;
+}
+
+.todo-app--menu_active_item__span {
+	color: hsl(220, 98%, 61%);
+}
+
+.todo-app--menu_active_item__span:hover {
+	color: hsl(220, 98%, 61%)!important;
+}
+
+.todo-app--order_hint__div {
+	position: absolute;
+
+	top: 100%;
+	margin-top: 2em;
+
+	width: 100%;
+	text-align: center;
+	font-weight: 700;
+	font-size: 14px;
 }

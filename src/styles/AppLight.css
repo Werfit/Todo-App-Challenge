@@ -1,0 +1,57 @@
+.todo-app--light_theme {
+    width: 100%;
+    min-height: 100vh;
+
+    background: hsl(0, 0%, 98%);
+}
+
+.todo-app--light_theme .header_image__header {
+	background: url('/src/images/bg-desktop-light.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.todo-app--light_theme .todo-app--todo-input__div {
+    background: #fff;
+}
+
+.todo-app--dark_theme .todo-app--todo-input__div > input {
+    color: hsl(235, 19%, 35%);
+}
+
+.todo-app--light_theme .todo-app--list__div {
+    background: #fff;
+
+    color: hsl(235, 19%, 35%);
+    fill: hsl(235, 19%, 35%);
+    
+    box-shadow: 0px 2em 4em hsl(236, 33%, 92%);
+}
+
+.todo-app--light_theme .item-is_checked__span {
+    background: hsl(233, 11%, 84%);
+}
+
+.todo-app--light_theme .item-is_checked__span > span {
+    background: #fff;
+}
+
+.todo-app--light_theme .todo-app--todo-item__div {
+    border-bottom: 1px solid hsl(236, 33%, 92%);
+}
+
+.todo-app--light_theme .todo-app--text__p {
+    color: hsl(233, 14%, 35%);
+}
+
+.todo-app--light_theme .todo-app--menu_item__div {
+    color: hsl(236, 9%, 61%);
+}
+
+.todo-app--light_theme .todo-app--menu_item__div > span:hover {
+    color: hsl(235, 19%, 35%);
+}
+
+.todo-app--light_theme .todo-app--order_hint__div {
+    color: hsl(236, 9%, 61%);
+}

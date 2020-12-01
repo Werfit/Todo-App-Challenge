@@ -1,0 +1,40 @@
+@media (max-width: 1000px) {
+    .todo-app__div {
+        width: 80%;
+    }
+
+    .todo-app--menu_filter__div {
+        position: absolute;
+        width: 100%;
+        padding: 1.5rem;
+
+        top: 100%; left: 0px;
+
+        margin-top: 1em;
+
+        border-radius: 5px;
+        justify-content: space-between;
+        display: flex;
+        text-align: center;
+    }
+
+    .todo-app--dark_theme .todo-app--menu_filter__div {
+        background: hsl(235, 24%, 19%);
+    }
+
+    .todo-app--light_theme .todo-app--menu_filter__div {
+        background: #fff;
+    }
+
+    .todo-app--menu_filter__div > span {
+        margin: 0px;
+        flex: 1;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .todo-app--order_hint__div {
+        margin-top: 7em;
+    }
+}

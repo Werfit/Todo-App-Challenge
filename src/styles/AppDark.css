@@ -1,0 +1,57 @@
+.todo-app--dark_theme {
+    width: 100%;
+    min-height: 100vh;
+
+    background: hsl(235, 21%, 11%);
+}
+
+.todo-app--dark_theme .header_image__header {
+	background: url('/src/images/bg-desktop-dark.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.todo-app--dark_theme .todo-app--todo-input__div {
+    background: hsl(235, 24%, 19%);
+}
+
+.todo-app--dark_theme .todo-app--todo-input__div > input {
+    color: hsl(234, 39%, 85%);
+}
+
+.todo-app--dark_theme .todo-app--list__div {
+    background: hsl(235, 24%, 19%);
+
+    color: hsl(234, 39%, 85%);
+    fill: hsl(233, 14%, 35%);
+    
+    box-shadow: 0px 2em 4em hsl(235, 21%, 8%);
+}
+
+.todo-app--dark_theme .item-is_checked__span {
+    background: hsl(233, 14%, 35%);
+}
+
+.todo-app--dark_theme .item-is_checked__span > span {
+    background: hsl(235, 24%, 19%);
+}
+
+.todo-app--dark_theme .todo-app--todo-item__div {
+    border-bottom: 1px solid hsl(233, 14%, 35%);
+}
+
+.todo-app--dark_theme .todo-app--text__p {
+    color: hsl(233, 14%, 35%);
+}
+
+.todo-app--dark_theme .todo-app--menu_item__div {
+    color: hsl(233, 14%, 35%);
+}
+
+.todo-app--dark_theme .todo-app--menu_item__div > span:hover {
+    color: hsl(236, 33%, 92%);
+}
+
+.todo-app--dark_theme .todo-app--order_hint__div {
+    color: hsl(233, 14%, 35%);
+}

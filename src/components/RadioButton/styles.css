@@ -1,0 +1,61 @@
+.item-is_checked__span {
+	position: relative;
+
+	padding: .6em;
+
+	border-radius: 50%;
+
+	cursor: pointer;
+
+	transition: .3s;
+}
+
+.item-is_checked__span::after {
+	position: absolute;
+	content: '';
+
+	top: 0px; left: 0px;
+	width: 100%; height: 100%;
+
+	background: linear-gradient(135deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+	transition: .3s;
+
+	border-radius: 50%;
+
+	opacity: 0;
+}
+
+.item-is_checked__span:hover::after {
+	opacity: 1;
+}
+
+.item-is_checked__span > span {
+	position: absolute;
+
+	width: 90%;
+	height: 90%;
+
+	top: 50%; bottom: 50%;
+	transform: translate(-50%, -50%);
+
+	border-radius: 50%;
+    z-index: 1;
+    
+    transition: .3s;
+}
+
+.item-checked__span::after {
+    opacity: 1;
+}
+
+.item-checked__span > span {
+    opacity: 0;
+}
+
+.item-is_checked__span > svg {
+	z-index: 2;
+	position: absolute;
+
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+}
