@@ -28,7 +28,7 @@ const InputItem = () => {
     return (
         <label htmlFor='todo-item-name' className='todo-app--todo-input__label'>
             <RadioButton isChecked={ isChecked } toggleCheckedState={ toggleCheckedState }/>
-            <input type='text' id='todo-item-name' name='todo-item-name' value={ todoItemName } onChange={ (e) => setTodoItemName(e.target.value) } placeholder='Write down to remember' spellCheck='false' autoComplete='off' autoCorrect='off' onKeyDown={ addItem } />
+            <input type='text' id='todo-item-name' name='todo-item-name' value={ todoItemName } onChange={ (e) => setTodoItemName(e.target.value) } placeholder='Write down to remember' spellCheck='false' autoComplete='off' onKeyDown={ addItem } />
         </label>
     )
 }
