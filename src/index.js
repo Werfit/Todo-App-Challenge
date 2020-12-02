@@ -6,7 +6,6 @@ import { HTML5Backend } from 'react-dnd-html5-backend'
 
 import { ContextProvider } from './context/GlobalContext'
 
-
 import './index.css'
 import App from './App'
 

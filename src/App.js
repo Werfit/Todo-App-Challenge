@@ -53,7 +53,7 @@ function App() {
 
 						<div className='todo-app--menu__div'>
 							<div className='todo-app--menu_item__div'>
-								{ items.length } items left
+								{ items.filter((item) => item.completed === false).length } items left
 							</div>
 							<div className='todo-app--menu_filter__div todo-app--menu_item__div'>
 								<span className={ filterNumber === 1 ? 'todo-app--menu_active_item__span' : '' } onClick={ () => menuItemClicked(1) }>All</span>
