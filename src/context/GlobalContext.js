@@ -2,9 +2,15 @@ import React, { createContext, useReducer } from 'react'
 import ContextReducer from './ContextReducer'
 
 const initalState = [
+	{
+		id: 4,
+		text: 'Complete online JavaScript course',
+		completed: true,
+		toShow: true,
+	},
     {
 		id: 3,
-		text: 'Jog aroung park 3x',
+		text: 'Jog around the park 3x',
 		completed: false,
 		toShow: true
 	},
@@ -45,6 +51,8 @@ export const ContextProvider = ({ children }) => {
 			type: 'ADD',
 			payload: item
 		})
+
+		console.log(state)
 	}
 
 	const delTodoItem = (item_id) => {
@@ -74,14 +82,14 @@ export const ContextProvider = ({ children }) => {
 		})
 	}
 
-	const clearTodoItemList = () => {
+	const clearCompletedTodoItemList = () => {
 		dispatch({
 			type: 'CLEAR'
 		})
 	}
 
     return (
-        <GlobalContext.Provider value={ { items: state, moveItem, newTodoItem, delTodoItem, showAllTodoItems, showFilteredTodoItems, completeTodoItem, clearTodoItemList } }>
+        <GlobalContext.Provider value={ { items: state, moveItem, newTodoItem, delTodoItem, showAllTodoItems, showFilteredTodoItems, completeTodoItem, clearCompletedTodoItemList } }>
             { children }
         </GlobalContext.Provider>
     )

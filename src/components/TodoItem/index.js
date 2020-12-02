@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import { useDrag } from 'react-dnd'
 import './styles.css'
 
@@ -8,7 +8,6 @@ import { GlobalContext } from '../../context/GlobalContext'
 import RadioButton from '../RadioButton'
 
 const TodoItem = ({ id, text, completed }) => {
-    const [isChecked, toggleCheckedState] = useState(completed)
     const [, drag] = useDrag({
         item: {
             id,
@@ -21,6 +20,11 @@ const TodoItem = ({ id, text, completed }) => {
         }
     })
     const { delTodoItem, completeTodoItem } = useContext(GlobalContext)
+    const [isChecked, toggleCheckedState] = useState(completed)
+    
+    useEffect(() => {
+        toggleCheckedState(completed)
+    }, [completed])
 
     const toggleTodoItemCompletion = () => {
         completeTodoItem(id, !isChecked)

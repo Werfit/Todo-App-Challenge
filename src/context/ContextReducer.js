@@ -9,16 +9,15 @@ export default function ContextReducer (state, action) {
             state[len - new_id].id = new_id
             state[len - id].id = id
 
-            console.log(state, id, new_id)
             return [...state]
         case 'ADD':
             return [action.payload, ...state]
         case 'REMOVE':
-            let temp_state = state.filter((item) => item.id !== action.payload)
-            for (let i = 0; i <= temp_state.length - 1; i++)
-                temp_state[i].id = temp_state.length - 1 - i
-            console.log(temp_state)
-            return temp_state
+            state = state.filter((item) => item.id !== action.payload)
+            for (let i = 0; i <= state.length - 1; i++)
+                state[i].id = state.length - 1 - i
+
+            return state
         case 'SHOW_ALL':
             return state.map((item) => { 
                 item.toShow = true
@@ -33,7 +32,11 @@ export default function ContextReducer (state, action) {
             state[action.payload.id].completed = action.payload.newCompletionState
             return [...state]
         case 'CLEAR':
-            return []
-        default: return state
+            state = state.filter((item) => item.completed === false);
+            return state.map((item, index) => {
+                item.id = state.length - 1 - index
+                return item
+            })
+        default: throw new Error()
     }
 }

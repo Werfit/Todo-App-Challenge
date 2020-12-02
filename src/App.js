@@ -18,7 +18,7 @@ function App() {
 	const [filterNumber, setFilterNumber] = useState(1)
 	// False - light theme | True - dark theme
 	const [themeColor, toggleTheme] = useState(false) 
-	const { items, showAllTodoItems, showFilteredTodoItems, clearTodoItemList } = useContext(GlobalContext)
+	const { items, showAllTodoItems, showFilteredTodoItems, clearCompletedTodoItemList } = useContext(GlobalContext)
 
 	const menuItemClicked = (number) => {
 		setFilterNumber(number)
@@ -61,7 +61,7 @@ function App() {
 								<span className={ filterNumber === 3 ? 'todo-app--menu_active_item__span' : '' } onClick={ () => menuItemClicked(3) }>Completed</span>
 							</div>
 							<div className='todo-app--menu_item__div'>
-								<span onClick={ clearTodoItemList }>Clear</span>
+								<span onClick={ clearCompletedTodoItemList }>Clear Completed</span>
 							</div>
 						</div>
 						<div className='todo-app--order_hint__div'>Drag and drop to reorder list</div>
