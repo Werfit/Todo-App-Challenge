@@ -31,4 +31,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 # By the way
 
-The project idea was taken from [Frontend Mentor](https://www.frontendmentor.io/). 
+Project idea was taken from [Frontend Mentor](https://www.frontendmentor.io/). 
